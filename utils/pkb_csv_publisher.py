@@ -46,7 +46,7 @@ def get_results_files(directory, file_regex='perfkitbenchmarker_results.json'):
     list_of_files = []
     for dirpath, dirs, files in os.walk(directory):
         for filename in fnmatch.filter(files, file_regex):
-            list_of_files.append(os.path.join(dirpath, filename)
+            list_of_files.append(os.path.join(dirpath, filename))
     return list_of_files
 
 
